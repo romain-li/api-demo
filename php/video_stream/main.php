@@ -11,9 +11,9 @@ $payload = array(
     'accessKey' => $access_key,
     'appId' => 'default',
     'eventId' => 'video',
-    'imgType': 'POLITICS_PORN_AD',
-    'audioType': 'POLITICS_PORN_AD',
-    'callback': 'https://jsonplaceholder.typicode.com/posts/',
+    'imgType' => 'POLITICS_PORN_AD',
+    'audioType' => 'POLITICS_PORN_AD',
+    'callback' => 'https://jsonplaceholder.typicode.com/posts/',
     'data' => array(
         'url' => $video_url,
         'streamType' => 'NORMAL',
