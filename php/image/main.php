@@ -2,16 +2,15 @@
 
 require 'lib/utils.php';
 
-$url = 'http://api-img-bj.fengkongcloud.com/image/v4';
+$url = 'http://api-img-bj.fengkongcloud.com/v2/saas/anti_fraud/img';
 $access_key = '{ACCESS_KEY}';
 $uid = '{UID}';
 $filename = '../files/demo.png';
 
 $payload = array(
     'accessKey' => $access_key,
+    'type' => 'AD_PORN_POLITICS',
     'appId' => 'default',
-    'eventId' => 'default',
-    'type' => 'DEFAULT',
     'data' => array(
         'img' => base64_encode(file_get_contents($filename)),
         'tokenId' => $uid,
