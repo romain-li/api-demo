@@ -1,6 +1,6 @@
 const utils = require('../lib/utils')
 
-const url = 'http://api-longtext-bj.fengkongcloud.com/longtext/v4'
+const url = 'http://api-text-bj.fengkongcloud.com/longtext/v4'
 const access_key = '{ACCESS_KEY}'
 const text = '{TEXT}'
 const uid = '{UID}'

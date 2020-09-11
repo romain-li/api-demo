@@ -1,7 +1,7 @@
 import requests
 
-url = 'http://api-longtext-bj.fengkongcloud.com/longtext/v4'
-access_key = '{ACCESS_KEY}'
+url = 'http://api-text-bj.fengkongcloud.com/longtext/v4'
+access_key = '4Ky6AV4hE0pWLeG1bXNw'
 text = '{TEXT}'
 uid = '{UID}'
 

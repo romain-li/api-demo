@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	url := "http://api-longtext-bj.fengkongcloud.com/longtext/v4"
+	url := "http://api-text-bj.fengkongcloud.com/longtext/v4"
 	accessKey := "{ACCESS_KEY}"
 	text := "{TEXT}"
 	uid := "{UID}"

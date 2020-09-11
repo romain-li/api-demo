@@ -2,7 +2,7 @@
 
 require 'lib/utils.php';
 
-$url = 'http://api-longtext-bj.fengkongcloud.com/longtext/v4';
+$url = 'http://api-text-bj.fengkongcloud.com/longtext/v4';
 $access_key = '{ACCESS_KEY}';
 $text = '{TEXT}';
 $uid = '{UID}';

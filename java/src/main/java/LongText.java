@@ -3,7 +3,7 @@ import net.sf.json.JSONObject;
 import java.util.HashMap;
 
 public class LongText {
-    private static final String URL = "http://api-longtext-bj.fengkongcloud.com/longtext/v4";
+    private static final String URL = "http://api-text-bj.fengkongcloud.com/longtext/v4";
     private static final String ACCESS_KEY = "{ACCESS_KEY}";
 
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 local json = require('cjson')
 local hc = require('lib.httpclient').new()
 
-local url = 'http://api-longtext-bj.fengkongcloud.com/longtext/v4'
+local url = 'http://api-text-bj.fengkongcloud.com/longtext/v4'
 local accessKey = '{ACCESS_KEY}'
 
 local payload = json.encode({
