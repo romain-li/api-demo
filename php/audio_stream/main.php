@@ -2,7 +2,7 @@
 
 require 'lib/utils.php';
 
-$url = 'http://api-audiostream-bj.fengkongcloud.com/audiostream/v4';
+$url = 'http://api-audiostream-bj.fengkongcloud.com/v2/saas/anti_fraud/audiostream';
 $access_key = '{ACCESS_KEY}';
 $stream_url = '{URL}';
 $bt_id = '{BT_ID}';
@@ -10,10 +10,9 @@ $uid = '{UID}';
 
 $payload = array(
     'accessKey' => $access_key,
-    'appId' => 'default',
-    'eventId' => 'audio',
     'type' => 'DEFAULT',
     'btId' => $bt_id,
+    'appId' => 'default',
     'callback' => 'https://jsonplaceholder.typicode.com/posts/',
     'data' => array(
         'url' => $stream_url,
