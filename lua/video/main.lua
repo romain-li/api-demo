@@ -1,19 +1,18 @@
 local json = require('cjson')
 local hc = require('lib.httpclient').new()
 
-local url = 'http://api-video-bj.fengkongcloud.com/video/v4'
+local url = 'http://api-video-bj.fengkongcloud.com/v2/saas/anti_fraud/video'
 local accessKey = '{ACCESS_KEY}'
 
 local payload = json.encode({
   accessKey = accessKey,
-  appId = 'default',
-  eventId = 'video',
   imgType = 'POLITICS_PORN_AD',
-  audioType = 'POLITICS_PORN_AD',
+  audioType = 'NONE',
+  appId = 'default',
+  btId = '{BT_ID}',
   callback = 'https://jsonplaceholder.typicode.com/posts/',
   data = {
     url = 'https://jsonplaceholder.typicode.com/posts/',
-    btId = '{BT_ID}',
   }
 })
 

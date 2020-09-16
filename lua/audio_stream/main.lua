@@ -1,15 +1,14 @@
 local json = require('cjson')
 local hc = require('lib.httpclient').new()
 
-local url = 'http://api-audiostream-bj.fengkongcloud.com/audiostream/v4'
+local url = 'http://api-audiostream-bj.fengkongcloud.com/v2/saas/anti_fraud/audiostream'
 local accessKey = '{ACCESS_KEY}'
 
 local payload = json.encode({
   accessKey = accessKey,
-  appId = 'default',
-  eventId = 'audio',
   type = 'DEFAULT',
   btId = '{BT_ID}',
+  appId = 'default',
   callback = 'https://jsonplaceholder.typicode.com/posts/',
   data = {
     url = '{URL}',

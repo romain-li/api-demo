@@ -1,14 +1,13 @@
 local json = require('cjson')
 local hc = require('lib.httpclient').new()
 
-local url = 'http://api-text-bj.fengkongcloud.com/text/v4'
+local url = 'http://api-text-bj.fengkongcloud.com/v2/saas/anti_fraud/text'
 local accessKey = '{ACCESS_KEY}'
 
 local payload = json.encode({
   accessKey = accessKey,
+  type = 'SOCIAL',
   appId = 'default',
-  eventId = 'default',
-  type = 'ALL',
   data = {
     text = '{TEXT}',
     tokenId = '{UID}',

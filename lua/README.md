@@ -15,7 +15,7 @@ lua text/main.lua
 
 返回输出：
 ```text
-{"code":1100,"message":"\u6210\u529f","requestId":"5c8971660ac31ada34b6a484cc780040","riskLevel":"PASS","riskLabel1":"normal","riskLabel2":"","riskLabel3":"","riskDescription":"\u6b63\u5e38","riskDetail":{},"allLabels":[],"auxInfo":{}}
+{"code":1100,"message":"\u6210\u529f","requestId":"d6a6bf7c3e6444210eec82f766b2580a","score":0,"riskLevel":"PASS","detail":"{\"contactResult\":[{\"contactString\":\"text\",\"contactType\":3}],\"description\":\"\u6b63\u5e38\",\"descriptionV2\":\"\u6b63\u5e38\",\"model\":\"M1000\",\"riskType\":0,\"sexy_risk_tokenid\":0}","status":0}
 ```
 
 **目录与服务对应关系**
@@ -23,10 +23,8 @@ lua text/main.lua
 | 目录 | 服务 |
 | --- | --- |
 | audio | 音频文件识别 |
-| audio_message | 音频消息识别 |
 | audio_stream | 音频流识别 |
 | image | 图片识别 |
-| long_text | 长文本识别 |
 | text | 文本识别 |
 | video | 视频识别 |
 | video_stream| 视频流识别 |

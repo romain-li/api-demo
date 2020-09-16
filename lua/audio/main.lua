@@ -2,7 +2,7 @@ local json = require('cjson')
 local mime = require("mime")
 local hc = require('lib.httpclient').new()
 
-local url = 'http://api-audio-bj.fengkongcloud.com/audio/v4'
+local url = 'http://api-audio-bj.fengkongcloud.com/v2/saas/anti_fraud/audio'
 local accessKey = '{ACCESS_KEY}'
 
 local inp = assert(io.open('../files/demo.pcm', 'rb'))
@@ -10,14 +10,12 @@ local content = mime.b64(inp:read('*all'))
 
 local payload = json.encode({
   accessKey = accessKey,
-  appId = 'default',
-  eventId = 'audio',
   type = 'DEFAULT',
-  content = content,
-  contentType = 'RAW',
+  appId = 'default',
   btId = '{BT_ID}',
   callback = 'https://jsonplaceholder.typicode.com/posts/',
   data = {
+    content = content,
     formatInfo = {
       format = 'pcm',
       rate = 8000,

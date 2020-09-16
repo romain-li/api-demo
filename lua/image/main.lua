@@ -2,7 +2,7 @@ local json = require('cjson')
 local mime = require("mime")
 local hc = require('lib.httpclient').new()
 
-local url = 'http://api-img-bj.fengkongcloud.com/image/v4'
+local url = 'http://api-img-bj.fengkongcloud.com/v2/saas/anti_fraud/img'
 local accessKey = '{ACCESS_KEY}'
 
 local inp = assert(io.open('../files/demo.png', 'rb'))
@@ -10,9 +10,8 @@ local content = mime.b64(inp:read('*all'))
 
 local payload = json.encode({
   accessKey = accessKey,
-  appId = 'default',
-  eventId = 'default',
   type = 'DEFAULT',
+  appId = 'default',
   data = {
     img = content,
     tokenId = '{UID}',
