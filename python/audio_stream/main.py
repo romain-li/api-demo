@@ -1,6 +1,6 @@
 import requests
 
-url = 'http://api-audiostream-bj.fengkongcloud.com/audiostream/v4'
+url = 'http://api-audiostream-bj.fengkongcloud.com/v2/saas/anti_fraud/audiostream'
 access_key = '{ACCESS_KEY}'
 stream_url = '{URL}'
 bt_id = '{BT_ID}'
@@ -8,9 +8,8 @@ uid = '{UID}'
 
 payload = {
     'accessKey': access_key,
-    'appId': 'default',
-    'eventId': 'audio',
     'type': 'DEFAULT',
+    'appId': 'default',
     'btId': bt_id,
     'callback': 'https://jsonplaceholder.typicode.com/posts/',
     'data': {

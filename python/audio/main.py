@@ -2,7 +2,7 @@ import base64
 
 import requests
 
-url = 'http://api-audio-bj.fengkongcloud.com/audio/v4'
+url = 'http://api-audio-bj.fengkongcloud.com/v2/saas/anti_fraud/audio'
 access_key = '{ACCESS_KEY}'
 bt_id = '{BT_ID}'
 filename = '../files/demo.pcm'
@@ -12,14 +12,12 @@ with open(filename, 'rb') as f:
 
 payload = {
     'accessKey': access_key,
-    'appId': 'default',
-    'eventId': 'audio',
     'type': 'DEFAULT',
-    'content': content.decode('utf-8'),
-    'contentType': 'RAW',
+    'appId': 'default',
     'btId': bt_id,
     'callback': 'https://jsonplaceholder.typicode.com/posts/',
     'data': {
+        'content': content.decode('utf-8'),
         'formatInfo': {
             'format': 'pcm',
             'rate': 8000,

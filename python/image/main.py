@@ -2,7 +2,7 @@ import base64
 
 import requests
 
-url = 'http://api-img-bj.fengkongcloud.com/image/v4'
+url = 'http://api-img-bj.fengkongcloud.com/v2/saas/anti_fraud/img'
 access_key = '{ACCESS_KEY}'
 uid = '{UID}'
 filename = '../files/demo.png'
@@ -12,9 +12,8 @@ with open(filename, 'rb') as f:
 
 payload = {
     'accessKey': access_key,
-    'appId': 'default',
-    'eventId': 'default',
     'type': 'DEFAULT',
+    'appId': 'default',
     'data': {
         'img': content.decode('utf-8'),
         'tokenId': uid,
