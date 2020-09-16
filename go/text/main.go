@@ -9,16 +9,15 @@ import (
 )
 
 func main() {
-	url := "http://api-text-bj.fengkongcloud.com/text/v4"
+	url := "http://api-text-bj.fengkongcloud.com/v2/saas/anti_fraud/text"
 	accessKey := "{ACCESS_KEY}"
 	text := "{TEXT}"
 	uid := "{UID}"
 
 	payload := map[string]interface{}{
 		"accessKey": accessKey,
+		"type":      "SOCIAL",
 		"appId":     "default",
-		"eventId":   "default",
-		"type":      "ALL",
 		"data": map[string]string{
 			"text":    text,
 			"tokenId": uid,

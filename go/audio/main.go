@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	url := "http://api-audio-bj.fengkongcloud.com/audio/v4"
+	url := "http://api-audio-bj.fengkongcloud.com/v2/saas/anti_fraud/audio"
 	accessKey := "{ACCESS_KEY}"
 	btId := "{BT_ID}"
 	filename := "../files/demo.pcm"
@@ -18,15 +18,13 @@ func main() {
 	contentBytes, _ := ioutil.ReadFile(filename)
 	content := base64.StdEncoding.EncodeToString(contentBytes)
 	payload := map[string]interface{}{
-		"accessKey":   accessKey,
-		"appId":       "default",
-		"eventId":     "audio",
-		"type":        "DEFAULT",
-		"content":     content,
-		"contentType": "RAW",
-		"btId":        btId,
-		"callback":    "https://jsonplaceholder.typicode.com/posts/",
+		"accessKey": accessKey,
+		"type":      "DEFAULT",
+		"appId":     "default",
+		"btId":      btId,
+		"callback":  "https://jsonplaceholder.typicode.com/posts/",
 		"data": map[string]interface{}{
+			"content": content,
 			"formatInfo": map[string]interface{}{
 				"format": "pcm",
 				"rate":   8000,

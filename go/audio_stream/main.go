@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	url := "http://api-audiostream-bj.fengkongcloud.com/audiostream/v4"
+	url := "http://api-audiostream-bj.fengkongcloud.com/v2/saas/anti_fraud/audiostream"
 	accessKey := "{ACCESS_KEY}"
 	streamUrl := "{URL}"
 	btId := "{BT_ID}"
@@ -17,10 +17,9 @@ func main() {
 
 	payload := map[string]interface{}{
 		"accessKey": accessKey,
-		"appId":     "default",
-		"eventId":   "audio",
 		"type":      "DEFAULT",
 		"btId":      btId,
+		"appId":     "default",
 		"callback":  "https://jsonplaceholder.typicode.com/posts/",
 		"data": map[string]interface{}{
 			"url":     streamUrl,

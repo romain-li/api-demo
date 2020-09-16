@@ -9,22 +9,21 @@ import (
 )
 
 func main() {
-	url := "http://api-video-bj.fengkongcloud.com/video/v4"
+	url := "http://api-videostream-bj.fengkongcloud.com/v3/saas/anti_fraud/videostream"
 	accessKey := "{ACCESS_KEY}"
-	btId := "{BT_ID}"
+	uid := "{UID}"
 	videoUrl := "https://jsonplaceholder.typicode.com/posts/"
 
 	payload := map[string]interface{}{
-		"accessKey": accessKey,
-		"appId":     "default",
-		"eventId":   "video",
-		"imgType":   "POLITICS_PORN_AD",
-		"audioType": "POLITICS_PORN_AD",
-		"callback":  "https://jsonplaceholder.typicode.com/posts/",
+		"accessKey":   accessKey,
+		"appId":       "default",
+		"imgType":     "POLITICS_PORN_AD",
+		"audioType":   "NONE",
+		"imgCallback": "https://jsonplaceholder.typicode.com/posts/",
 		"data": map[string]interface{}{
-			"url":        videoUrl,
 			"streamType": "NORMAL",
-			"btId":       btId,
+			"tokenId":    uid,
+			"url":        videoUrl,
 		},
 	}
 	b, _ := json.Marshal(payload)
