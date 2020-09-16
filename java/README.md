@@ -18,10 +18,8 @@ mvn exec:java -Dexec.mainClass="Text"
 | 目录 | 服务 |
 | --- | --- |
 | Audio | 音频文件识别 |
-| AudioMessage | 音频消息识别 |
 | AudioStream | 音频流识别 |
 | Image | 图片识别 |
-| LongText | 长文本识别 |
 | Text | 文本识别 |
 | Video | 视频识别 |
 | VideoStream| 视频流识别 |
