@@ -1,7 +1,7 @@
 const utils = require('../lib/utils')
 const fs = require('fs')
 
-const url = 'http://api-audio-bj.fengkongcloud.com/audio/v4'
+const url = 'http://api-audio-bj.fengkongcloud.com/v2/saas/anti_fraud/audio'
 const access_key = '{ACCESS_KEY}'
 const bt_id = '{BT_ID}'
 const filename = '../files/demo.pcm'
@@ -9,14 +9,12 @@ const filename = '../files/demo.pcm'
 const content = fs.readFileSync(filename, {encoding: 'base64'})
 const payload = {
     'accessKey': access_key,
-    'appId': 'default',
-    'eventId': 'audio',
     'type': 'DEFAULT',
-    'contentType': 'RAW',
-    'content': content,
+    'appId': 'default',
     'btId': bt_id,
     'callback': 'https://jsonplaceholder.typicode.com/posts/',
     'data': {
+        'content': content,
         'formatInfo': {
             'format': 'pcm',
             'rate': 8000,

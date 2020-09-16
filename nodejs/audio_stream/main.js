@@ -1,6 +1,6 @@
 const utils = require('../lib/utils')
 
-const url = 'http://api-audiostream-bj.fengkongcloud.com/audiostream/v4'
+const url = 'http://api-audiostream-bj.fengkongcloud.com/v2/saas/anti_fraud/audiostream'
 const access_key = '{ACCESS_KEY}'
 const stream_url = '{URL}'
 const bt_id = '{BT_ID}'

@@ -11,15 +11,11 @@ node text/main.js
 {
   code: 1100,
   message: '成功',
-  requestId: '1cfb6ebb2b86737f3cbd146042d23821',
+  requestId: 'acfb9782eba623daf54adf2a9b10fa71',
+  score: 0,
   riskLevel: 'PASS',
-  riskLabel1: 'normal',
-  riskLabel2: '',
-  riskLabel3: '',
-  riskDescription: '正常',
-  riskDetail: {},
-  allLabels: [],
-  auxInfo: {}
+  detail: '{"contactResult":[{"contactString":"text","contactType":3}],"description":"正常","descriptionV2":"正常","model":"M1000","riskType":0,"sexy_risk_tokenid":0}',
+  status: 0
 }
 ```
 
@@ -28,10 +24,8 @@ node text/main.js
 | 目录 | 服务 |
 | --- | --- |
 | audio | 音频文件识别 |
-| audio_message | 音频消息识别 |
 | audio_stream | 音频流识别 |
 | image | 图片识别 |
-| long_text | 长文本识别 |
 | text | 文本识别 |
 | video | 视频识别 |
 | video_stream| 视频流识别 |

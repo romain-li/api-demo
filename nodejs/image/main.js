@@ -1,7 +1,7 @@
 const utils = require('../lib/utils')
 const fs = require('fs')
 
-const url = 'http://api-img-bj.fengkongcloud.com/image/v4'
+const url = 'http://api-img-bj.fengkongcloud.com/v2/saas/anti_fraud/img'
 const access_key = '{ACCESS_KEY}'
 const uid = '{UID}'
 const filename = '../files/demo.png'
@@ -9,9 +9,8 @@ const filename = '../files/demo.png'
 const content = fs.readFileSync(filename, {encoding: 'base64'})
 const payload = {
     'accessKey': access_key,
-    'appId': 'default',
-    'eventId': 'default',
     'type': 'DEFAULT',
+    'appId': 'default',
     'data': {
         'img': content,
         'tokenId': uid,

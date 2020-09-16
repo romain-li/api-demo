@@ -1,21 +1,20 @@
 const utils = require('../lib/utils')
 
-const url = 'http://api-video-bj.fengkongcloud.com/video/v4'
+const url = 'http://api-videostream-bj.fengkongcloud.com/v3/saas/anti_fraud/videostream'
 const access_key = '{ACCESS_KEY}'
-const bt_id = '{BT_ID}'
+const uid = '{UID}'
 const video_url = 'https://jsonplaceholder.typicode.com/posts/'
 
 const payload = {
     'accessKey': access_key,
     'appId': 'default',
-    'eventId': 'video',
     'imgType': 'POLITICS_PORN_AD',
-    'audioType': 'POLITICS_PORN_AD',
-    'callback': 'https://jsonplaceholder.typicode.com/posts/',
+    'audioType': 'NONE',
+    'imgCallback': 'https://jsonplaceholder.typicode.com/posts/',
     'data': {
-        'url': video_url,
         'streamType': 'NORMAL',
-        'btId': bt_id,
+        'tokenId': uid,
+        'url': video_url,
     },
 }
 
