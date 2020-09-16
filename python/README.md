@@ -14,7 +14,7 @@ python text/main.py
 
 返回输出：
 ```text
-{'code': 1100, 'message': '成功', 'requestId': '03aa53c06fa6922244ceb0afaf7eb56c', 'riskLevel': 'PASS', 'riskLabel1': 'normal', 'riskLabel2': '', 'riskLabel3': '', 'riskDescription': '正常', 'riskDetail': {}, 'allLabels': [], 'auxInfo': {}}
+{'code': 1100, 'message': '成功', 'requestId': 'dbad2b151856bd1feb67c7759091eca0', 'score': 0, 'riskLevel': 'PASS', 'detail': '{"contactResult":[{"contactString":"text","contactType":3}],"description":"正常","descriptionV2":"正常","model":"M1000","riskType":0,"sexy_risk_tokenid":0}', 'status': 0}
 ```
 
 **目录与服务对应关系**

@@ -8,32 +8,21 @@ php text/main.php
 
 返回输出：
 ```text
-object(stdClass)#1 (11) {
+object(stdClass)#1 (7) {
   ["code"]=>
   int(1100)
   ["message"]=>
   string(6) "成功"
   ["requestId"]=>
-  string(32) "434a81853d70262f3241fa41c5a15192"
+  string(32) "832287c9db58d36c6033812fcd243173"
+  ["score"]=>
+  int(0)
   ["riskLevel"]=>
   string(4) "PASS"
-  ["riskLabel1"]=>
-  string(6) "normal"
-  ["riskLabel2"]=>
-  string(0) ""
-  ["riskLabel3"]=>
-  string(0) ""
-  ["riskDescription"]=>
-  string(6) "正常"
-  ["riskDetail"]=>
-  object(stdClass)#2 (0) {
-  }
-  ["allLabels"]=>
-  array(0) {
-  }
-  ["auxInfo"]=>
-  object(stdClass)#3 (0) {
-  }
+  ["detail"]=>
+  string(159) "{"contactResult":[{"contactString":"text","contactType":3}],"description":"正常","descriptionV2":"正常","model":"M1000","riskType":0,"sexy_risk_tokenid":0}"
+  ["status"]=>
+  int(0)
 }
 ```
 
