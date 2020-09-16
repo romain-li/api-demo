@@ -10,7 +10,6 @@ $video_url = 'https://jsonplaceholder.typicode.com/posts/';
 $payload = array(
     'accessKey' => $access_key,
     'appId' => 'default',
-    'eventId' => 'video',
     'imgType' => 'POLITICS_PORN_AD',
     'audioType' => 'NONE',
     'imgCallback' => 'https://jsonplaceholder.typicode.com/posts/',
