@@ -15,6 +15,8 @@ public class Audio {
         payload.put("callback", "https://jsonplaceholder.typicode.com/posts/");
 
         HashMap<String, Object> data = new HashMap<String, Object>();
+        // url 和 content 至少提供一个
+        // data.put("url", "https://jsonplaceholder.typicode.com/audio");
         data.put("content", Utils.readFileToBase64("../files/demo.pcm"));
         HashMap<String, Object> dataInfo = new HashMap<String, Object>();
         dataInfo.put("format", "pcm");

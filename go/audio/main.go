@@ -24,6 +24,8 @@ func main() {
 		"btId":      btId,
 		"callback":  "https://jsonplaceholder.typicode.com/posts/",
 		"data": map[string]interface{}{
+			// url 和 content 至少提供一个
+			// "url":  "https://jsonplaceholder.typicode.com/audio",
 			"content": content,
 			"formatInfo": map[string]interface{}{
 				"format": "pcm",

@@ -14,6 +14,8 @@ const payload = {
     'btId': bt_id,
     'callback': 'https://jsonplaceholder.typicode.com/posts/',
     'data': {
+        // url 和 content 至少提供一个
+        // 'url': 'https://jsonplaceholder.typicode.com/audio',
         'content': content,
         'formatInfo': {
             'format': 'pcm',

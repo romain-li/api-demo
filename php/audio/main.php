@@ -14,6 +14,8 @@ $payload = array(
     'btId' => $bt_id,
     'callback' => 'https://jsonplaceholder.typicode.com/posts/',
     'data' => array(
+        // url 和 content 至少提供一个
+        // 'url' => 'https://jsonplaceholder.typicode.com/audio',
         'content' => base64_encode(file_get_contents($filename)),
         'formatInfo' => array(
             'format' => 'pcm',
