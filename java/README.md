@@ -19,6 +19,7 @@ mvn exec:java -Dexec.mainClass="Text"
 | --- | --- |
 | Audio | 音频文件识别 |
 | AudioStream | 音频流识别 |
+| Event | 天网事件 |
 | Image | 图片识别 |
 | Text | 文本识别 |
 | Video | 视频识别 |

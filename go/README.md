@@ -17,6 +17,7 @@ map[code:1100 detail:{"contactResult":[{"contactString":"text","contactType":3}]
 | --- | --- |
 | audio | 音频文件识别 |
 | audio_stream | 音频流识别 |
+| event | 天网事件 |
 | image | 图片识别 |
 | text | 文本识别 |
 | video | 视频识别 |
