@@ -30,6 +30,7 @@ func main() {
 	if resp != nil {
 		respBytes, _ := ioutil.ReadAll(resp.Body)
 		_ = json.Unmarshal(respBytes, &data)
+		// 通过 code 和 riskLevel 判断返回，具体请参考接口文档
 		fmt.Println(data)
 	}
 }
