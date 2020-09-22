@@ -22,6 +22,7 @@ public class Image {
         JSONObject result = Utils.httpPost(URL, json);
 
         json = JSONObject.fromObject(result);
+		// 通过 code 和 riskLevel 判断返回，具体请参考接口文档
         System.out.println(json.toString());
     }
 }
